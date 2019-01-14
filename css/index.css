@@ -178,7 +178,7 @@ header .header-img{
     }
 
     .header-text-container h1{
-        font-size: 5em;
+        font-size: 3em;
     }
     .main div{
         display: block;
@@ -226,9 +226,6 @@ body{
 	background-color: #faebd7;
 }
 
-@media (max-width: 800px){
-  
-}
 
 a:hover{
 	cursor: pointer;
