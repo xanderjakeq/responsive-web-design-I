@@ -66,7 +66,16 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Your code starts here! */
-
+section{
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    align-items: center;
+}
+section img{
+    width: 30vw;
+    
+}
 .container{
     padding: 0 5%;
 }
@@ -102,24 +111,6 @@ header nav a, .logo{
     margin: 0 4vw;
 }
 
-.header-text-container{
-	padding: 10vh 5vw;
-	display: inline-block;
-	width: 60vw;
-}
-
-.header-text-container h1{
-    font-size: 6em;
-    width: 24vw;
-}
-
-.header-text-container h1,button{
-	margin: auto;
-	display: block;
-}
-header .header-img{
-    display: inline-block;
-}
 
 @media (max-width: 800px){
     nav{
@@ -152,17 +143,48 @@ header .header-img{
         display: none;
     }
 
-    .header-text-container{
-        padding: 0;
-        display: flex;
-        width: 100%;
+    section{
         flex-direction: column;
-        align-items: center;
     }
 
-    .header-text-container h1{
-        width: min-content;
+    section img{
+        width: 100%;
+        overflow: hidden;
     }
+
+    /* Dunno why this is not working */
+
+    /* .container section:nth-child(1){
+        order: 6;
+    }
+    .container section:nth-child(2){
+        order: 3;
+    }
+    .container section:nth-child(3){
+        order: 5;
+    }
+    .container section:nth-child(4){
+        order: 1;
+    }
+    .container section:nth-child(5){
+        order: 2;
+    } */
+    .container section .one{
+        order: 5;
+    }
+    .container section .two{
+        order: 3;
+    }
+    .container section .three{
+        order: 2;
+    }
+    .container section .four{
+        order: 1;
+    }
+    .container section .five{
+        order: 4;
+    }
+
 }
 
 @media (max-width: 500px){
@@ -172,59 +194,16 @@ header .header-img{
         height: min-content;
         padding-bottom: 0;
     }
+    header{
+        padding: 0;
+    }
 
     header nav a{
         margin-bottom: 50px;
     }
 
-    .header-text-container h1{
-        font-size: 3em;
-    }
-    .main div{
-        display: block;
-        width: 100% !important;
-    }
 }
 
-button{
-	background: none;
-    border: 2px solid black;
-    width: 30%;
-    height: 7vh;
-}
-
-.main{
-	border-top: 1px solid black;
-	border-bottom: 1px solid black;
-}
-
-
-.main img{
-	width: 100%;
-}
-
-.main div, .contact{
-	display: inline-block;
-	width: calc(100%/2.01);
-	padding: 5vh 5vh;
-}
-
-.main .more{
-	width: calc(100%/3.03);
-}
-
-footer {
-	padding: 5vh;
-    text-align: center;
-    height: 20vh;
-}
-
-body{
-	/* background-image: url('/img/header-img.png'),url('/img/mid-page-accent.jpg');
-	background-repeat: no-repeat,no-repeat;
-	background-position: top 33% right 13%, top 122% left 50%; */
-	background-color: #faebd7;
-}
 
 
 a:hover{
