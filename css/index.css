@@ -236,4 +236,54 @@ a:hover{
 }
 
 
+button{
+	background: none;
+    border: 2px solid black;
+    width: 30%;
+    height: 7vh;
+}
+
+.main{
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+
+.main img{
+	width: 100%;
+}
+
+.main div, .contact{
+	display: inline-block;
+	width: calc(100%/2.01);
+	padding: 5vh 5vh;
+}
+
+.main .more{
+	width: calc(100%/3.03);
+}
+
+footer {
+	padding: 5vh;
+    text-align: center;
+    height: 20vh;
+}
+
+body{
+	/* background-image: url('/img/header-img.png'),url('/img/mid-page-accent.jpg');
+	background-repeat: no-repeat,no-repeat;
+	background-position: top 33% right 13%, top 122% left 50%; */
+	background-color: #faebd7;
+}
+
+
+a:hover{
+	cursor: pointer;
+	border-bottom: 3px solid cornsilk;
+	transition-duration: 300ms;
+}
+
+
+
+
 
